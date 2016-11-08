@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.uniclass.sangji.uniclassandroid.calculatorActivity">
+
+    <TextView
+        android:id="@+id/calculatorInput"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        >
+
+        <TextView
+            android:id="@+id/calculatorOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="70"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:onClick="onClickedDeleteBtn"
+            />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        >
+
+        <TableRow>
+            <Button
+                android:id="@+id/calculatorBtn01"
+                android:text="1"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn02"
+                android:text="2"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn03"
+                android:text="3"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorMulBtn"
+                android:text="x"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/calculatorBtn04"
+                android:text="4"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn05"
+                android:text="5"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn06"
+                android:text="6"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorDivBtn"
+                android:text="/"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/calculatorBtn07"
+                android:text="7"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn08"
+                android:text="8"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn09"
+                android:text="9"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorPlusBtn"
+                android:text="+"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/calculatorClearBtn"
+                android:text="C"
+                android:textSize="20dp"
+                android:onClick="onClickedClearBtn"/>
+
+            <Button
+                android:id="@+id/calculatorBtn00"
+                android:text="0"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+
+            <Button
+                android:id="@+id/calculatorEqualsBtn"
+                android:text="="
+                android:textSize="20dp"
+                android:onClick="onClickedEqualsBtn"/>
+
+            <Button
+                android:id="@+id/calculatorMinusBtn"
+                android:text="-"
+                android:textSize="20dp"
+                android:onClick="onClickedBtn"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
