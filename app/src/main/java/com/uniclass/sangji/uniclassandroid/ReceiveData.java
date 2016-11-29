@@ -36,27 +36,19 @@ public class ReceiveData extends AppCompatActivity {
                     textView.setText(text);
                 }
             }
-            else if(type.startsWith("image/"))
-            {
+            else if(type.startsWith("image/")) {
                 textView.setVisibility(View.GONE);
                 Uri uri = (Uri) intent.getParcelableExtra(Intent.EXTRA_STREAM);
-                Toast.makeText(this, "여기는?", Toast.LENGTH_SHORT).show();
-                if(uri != null)
-                {
-                    Toast.makeText(this, "Uri != null", Toast.LENGTH_SHORT).show();
+
+                if (uri != null) {
                     imageView.setImageURI(uri);
 
                 }
-                else
-                {
-                    Toast.makeText(this, "Uri == null", Toast.LENGTH_SHORT).show();
-                }
-            }
-            else if(action.equals(Intent.ACTION_MAIN))
-            {
-                Toast.makeText(this, "이건 뭐죠?", Toast.LENGTH_SHORT).show();
             }
         }
-
+        else if(action.equals(Intent.ACTION_MAIN))
+        {
+            Toast.makeText(this, "이건 뭐죠?", Toast.LENGTH_SHORT).show();
+        }
     }
 }
